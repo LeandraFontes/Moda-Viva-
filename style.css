@@ -1,7 +1,7 @@
 /* Reset básico */
 * {
   margin: 0;
-  padding: 0;
+  padding: 4px 12px;
   box-sizing: border-box;
 }
 
@@ -10,6 +10,7 @@ body {
   font-family: Arial, sans-serif;
   background-color: #fff;
   color: #333;
+  
 }
 
 /* Header */
@@ -19,6 +20,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem 2rem;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -31,6 +35,7 @@ nav a {
   text-decoration: none;
   font-size: 18px;
   display: inline-block;
+  justify-content: space-evenly;
 }
 
 nav a:hover {
@@ -44,49 +49,58 @@ nav a:hover {
   border: none;
 }
 
+
+/* Fonte alternativa parecida com "Romans" */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&display=swap');
+
 .sobre-moda-viva {
-  background-color: #ffffff; /* Fundo branco */
+  background-color: #e6efdf;
+  padding: 60px 30px;
+  text-align: center;
+}
+
+.logo-romans {
+  font-family: 'Cormorant Garamond', serif; /* Substituta parecida com Romans */
+  font-size: 42px;
+  color: #2f6032;
+  margin-bottom: 50px;
+  letter-spacing: 2px;
+}
+
+.conteudo-sobre-bloco {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
-  padding: 50px 20px;
-  gap: 40px; /* Espaço entre imagem e texto */
+  align-items: flex-start;
+  gap: 60px;
+  flex-wrap: wrap;
 }
 
-.sobre-moda-viva img {
-  max-width: 400px;
-  width: 100%;
-  border-radius: 0; /* Sem bordas arredondadas, como na imagem */
+.imagem-modelo {
+  width: 300px;
+  border-radius: 4px;
+  max-width: 100%;
 }
 
-.conteudo-sobre {
-  max-width: 500px;
+.texto-sobre-direita {
+  max-width: 420px;
   text-align: left;
 }
 
-.conteudo-sobre p {
-  font-size: 18px;
+.texto-sobre-direita h2 {
+  font-size: 26px;
+  color: #026c27;
+  font-weight: bold;
+  margin-bottom: 18px;
+  font-family: Arial, sans-serif;
+}
+
+.texto-sobre-direita p {
+  font-size: 17px;
   line-height: 1.6;
-  color: #333;
+  color: #111;
+  font-family: Arial, sans-serif;
 }
 
-
-.sobre-moda-viva img {
-  max-width: 400px;
-  width: 100%;
-  border-radius: 12px;
-}
-
-.titulo h2 {
-  font-size: 32px;
-  color: #007f4f;
-}
-
-.titulo span {
-  font-size: 18px;
-  color: #555;
-}
 
 /* Descontos */
 .descontos {
@@ -214,5 +228,3 @@ footer {
   margin: 0 10px;
   font-size: 16px;
 }
-
-
